@@ -1,0 +1,147 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  text-align: center;
+  background: var(--background-end-rgb);
+  gap: 2rem;
+}
+
+.title {
+  font-family: "Cinzel", serif; /* Luxurious font */
+  font-size: 3.5rem;
+  color: #d9d6d4; /* Sophisticated silver */
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px #000; /* Subtle shadow for depth */
+}
+
+.description {
+  font-size: 1.1rem;
+  max-width: var(--max-width);
+  margin-top: 1.5rem; /* Ensure space above the description */
+  color: #d9d6d4; /* Updated to a more luxurious silver color */
+}
+
+.description p {
+  background-color: rgba(var(--tile-start-rgb), 0.8);
+  border: 1px solid rgba(var(--tile-border-rgb), 0.6);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.3); /* Orange Glow */
+  padding: 1rem;
+  margin: 0;
+  color: #d9d6d4; /* Softer silver color for text */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: var(--max-width);
+}
+
+.card {
+  padding: 2rem; /* Increased padding */
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0.9);
+  border: 1px solid rgba(var(--card-border-rgb), 0.6);
+  color: rgb(223, 217, 217); /* Softer silver */
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  transition: background 0.5s, border 0.5s, transform 0.5s;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  text-align: center; /* Center text */
+  position: relative; /* For positioning button container */
+  min-height: 350px; /* Ensures all cards have the same height */
+  max-width: 800px; /* Sets a max width for all cards */
+  width: 100%; /* Makes sure the card uses full width */
+  margin: 1rem auto; /* Centers the card */
+}
+
+.card h2 {
+  margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.card p {
+  margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.buttonContainer {
+  display: flex; /* Flex display for buttons */
+  gap: 1rem; /* Space between buttons */
+  margin-top: 1rem; /* Space above button container */
+  flex-wrap: wrap; /* Wrap buttons if needed */
+  justify-content: center; /* Center the buttons */
+}
+/* Update styles for small buttons with images */
+.button {
+  width: 200px; /* Adjust width to fit the button size */
+  height: 150px; /* Adjust height */
+  background-size: cover; /* Ensure the background image covers the button */
+  background-position: center; /* Center the background image */
+  border-radius: var(--border-radius); /* Consistent border radius */
+  border: 1px solid rgba(var(--card-border-rgb), 0.6);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Orange Glow */
+  display: flex; /* Display flex to align content */
+  align-items: flex-end; /* Align content to the bottom */
+  justify-content: center; /* Center the text */
+  color: #d9d6d4; /* Set text color */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold font */
+  text-shadow: 0 0 5px #000; /* Text shadow for contrast */
+  text-align: center; /* Center text */
+  padding: 0.5rem; /* Padding for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+/* Button hover effect */
+.button:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.5); /* Stronger orange glow */
+}
+
+/* Specific button for HiveEngine */
+.hiveButton {
+  background-image: url('/LOGO.jpg'); /* Background image for HiveEngine button */
+}
+
+/* Specific button for HippoMan */
+.hippoButton {
+  background-image: url('/HippoMan.png'); /* Background image for HippoMan button */
+}
+.card:hover {
+  background: rgba(var(--card-rgb), 1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.8);
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 165, 0, 0.5); /* Stronger Orange Glow */
+}
+
+.card:hover h2,
+.card:hover p {
+  color: #ffa500; /* Orange highlight on hover */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.image {
+  border-radius: 50%;
+  border: 5px solid #dfddda; /* Sophisticated silver border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  filter: drop-shadow(0 0 2px rgba(255, 165, 0, 0.9)); /* Orange Glow Effect */
+}
